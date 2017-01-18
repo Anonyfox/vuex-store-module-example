@@ -1,0 +1,29 @@
+{
+  "name": "vuex-store-module-example",
+  "private": true,
+  "version": "0.0.1",
+  "description": "vuex store module for managing (0-4) persons, written in typescript",
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "scripts": {
+    "start": "npm run build",
+    "build": "rm -rf dist && tsc",
+    "test": "rm -rf dist && tsc -p . && npm run lint && mocha dist/test",
+    "lint": "tslint --project ./tsconfig.json --fix --type-check ./src ./test",
+    "prepublish": "npm run build"
+  },
+  "author": "Maximilian Stroh <hisako1337@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mocha-typescript": "^1.0.15",
+    "tslint": "^4.2.0",
+    "typescript": "^2.1.4",
+    "vue": "^2.1.8"
+  },
+  "dependencies": {
+    "vuex": "^2.1.1"
+  }
+}

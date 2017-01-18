@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "lib": ["es7", "dom"],
+        "newLine": "LF",
+        "outDir": "dist",
+        "forceConsistentCasingInFileNames": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "declaration": true
+    },
+    "exclude": [
+		"dist",
+		"node_modules"
+    ]
+}
